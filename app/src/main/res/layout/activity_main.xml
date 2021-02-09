@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:src="@drawable/linearbulb"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Instructions"
+                android:id="@+id/instructions"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:visibility="visible"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15dp"
+                android:text="Total Questions : 10"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Total Time : 5 mins"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/btnStart"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:text="Start Quiz" />
+</LinearLayout>
